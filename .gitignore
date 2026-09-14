@@ -1,0 +1,9 @@
+# Ignore everything by default
+*
+
+# But keep these
+!.gitignore
+!README.md
+!LICENSE
+!harbin.schema.yaml
+!harbin.dict.yaml
