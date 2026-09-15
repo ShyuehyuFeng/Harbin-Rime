@@ -3,7 +3,7 @@
 
 schema:
   schema_id: harbin
-  name: Harbin
+  name: HARBIN
   version: "26.9.14"
   author:
     - ShyuehyuFeng
@@ -85,6 +85,26 @@ speller:
 
     # 5. "e" is an alias for "eh" anywhere in the syllable.
     - derive/eh/e/
+
+    # 6a. Round mouth (yu)
+    # - derive/^(ch|sh|rh|ts|dz|[bpmfdtnlgkhjzscr])?yu[a-z]*?([wqvx])$/$1yu$2/
+
+    # 6b. Even teeth (i)
+    # - derive/^(ch|sh|rh|ts|dz|[bpmfdtnlgkhjzscr])?i[a-z]*?([wqvx])$/$1i$2/
+
+    # 6c. Closed mouth (u)
+    # - derive/^(ch|sh|rh|ts|dz|[bpmfdtnlgkhjzscr])?u[a-z]*?([wqvx])$/$1u$2/
+
+    # 6d. Open mouth (everything else)
+    # - derive/^(ch|sh|rh|ts|dz|[bpmfdtnlgkhjzscr])?(?![iu]|yu)[a-z]*?([wqvx])$/$1$2/
+
+    - derive/^(sh|rh|ch|ts|dz|[bpmfdtnlgkhjzscr])[a-z]*([wqvx])$/$1$2/
+
+    # 7. "y" is an alias for "yu" anywhere in the syllable.
+    #    e.g. yuv -> yv, yuanv -> yanv, shyuanv -> shyanv.
+    #    Does NOT affect sy, shy, cy, chy, zy, jy, ry
+    #    because those syllables contain no "yu" substring.
+    - derive/yu([a-pr-u])/y$1/
 
 translator:
   dictionary: harbin

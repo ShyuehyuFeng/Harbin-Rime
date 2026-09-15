@@ -1,6 +1,6 @@
 ---
 name: harbin
-version: "26.9.14"
+version: "26.9.15"
 sort: by_weight
 use_preset_vocabulary: true
 ...
@@ -2480,6 +2480,7 @@ use_preset_vocabulary: true
 暨	jiq	
 暮	muq	
 暴	bauq	99.78%
+曆	liq	
 曙	shux	
 曜	iauq	100%
 曝	bauq	80.43%
@@ -60996,6 +60997,8 @@ use_preset_vocabulary: true
 藏文	tsangw uenw	
 藏族	zangq zuw	
 藏族	tsangw zuw	
+藏曆	zangq liq	
+藏曆	tsangw liq	
 藏書	zangq shuv	
 藏書	zangq jiauv	
 藏書	tsangw shuv	
@@ -61626,6 +61629,8 @@ use_preset_vocabulary: true
 行之有效	shingw jyv ioux shiauq	
 行乞	hangw chix	
 行乞	shingw chix	
+行事曆	hangw shyq liq	
+行事曆	shingw shyq liq	
 行人	hangw rhenw	
 行人	hangw inw	
 行人	shingw rhenw	
@@ -71894,6 +71899,8 @@ use_preset_vocabulary: true
 長時間	jangx shyw jianq	
 長時間	changw shyw jianv	
 長時間	changw shyw jianq	
+長曆	jangx liq	
+長曆	changw liq	
 長書	jangx shuv	
 長書	jangx jiauv	
 長書	changw shuv	
@@ -77810,4 +77817,5 @@ use_preset_vocabulary: true
 龜行	gueiv shingw	
 龜裂	gueiv liehx	
 龜裂	gueiv liehq	
+
 
